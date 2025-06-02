@@ -2,11 +2,12 @@ SHOWS = [
     " Avatar: what is that?",
     "pokemon",
     "   ben 10   ",
-    "Stranger thing",
+    "Stranger things",
 ]
 
 def main():
     for show in SHOWS:
-        print(show.strip().title())
-
+        print(show.title().strip())
+#strip() = delete begining and end whitespace
+#title() = capitalize first letter of every words
 main()
