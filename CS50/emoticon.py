@@ -1,9 +1,9 @@
 emo = "v.v"
 
 def main():
-    print("Anyone there ?")
+    print("Anyone there?")
 
 def say(phrase):
-    print(phrase, " ", emo)
+    print(phrase + " " + emo)
 
 main()
