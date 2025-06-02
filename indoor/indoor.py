@@ -1,1 +1,1 @@
-print(input("What would you like to say?: )).lower()
+input("What would you like to say?: ).lower()
