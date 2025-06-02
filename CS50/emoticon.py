@@ -3,6 +3,8 @@ emo = "v.v"
 
 #create a function main() that say(smt)
 def main():
+    # modify the global variable in local
+    # put it in local(main)
     global emo
     say("Anyone there?")
     emo = ":D"
