@@ -4,7 +4,7 @@ def greet(input):
     else:
         return "I dont know what you mean"
 
-greeting = greet(" brother")
-print(greeting,"hehe")
+greeting = greet("brother")
+print(greeting,", hehe")
 
 # use return instead of print let us modify the answer for later use
