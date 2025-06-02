@@ -1,0 +1,10 @@
+ls = show a list of file and folder
+code = creade a code file
+cp = copy a file / ex: cp hello.py farewell.py (copy and change the name)
+mv = change file's name / ex: mv hello.py bye.py
+rm = remove a file
+mkdir(make directory) = create a folder
+cd = switch to different folder / ex cd folder1/(now I am able to access the folder and create file
+cd.. = to move back to the parent directory from a folder / ex: folder1/ cd..
+mv(file).. = to move file from a folder to parent directory
+rmdir = delete the folder                                               )
