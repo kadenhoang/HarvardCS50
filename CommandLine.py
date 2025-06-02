@@ -8,3 +8,4 @@ cd = switch to different folder / ex cd folder1/(now I am able to access the fol
 cd.. = to move back to the parent directory from a folder / ex: folder1/ cd..
 mv(file).. = to move file from a folder to parent directory
 rmdir = delete the folder                                               )
+clear = clear the terminal commands
