@@ -7,6 +7,6 @@ SHOWS = [
 
 def main():
     for show in SHOWS:
-        print(show).strip().title()
+        print(show.strip().title())
 
 main()
