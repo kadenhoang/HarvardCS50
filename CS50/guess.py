@@ -6,8 +6,8 @@ def getGuess():
 #define the main()
 def main():
     guess = getGuess()
-#put : after if - the next line should space inward
-#means the next line is in the if function
+#put " : " after if - the next line should space inward
+#means the next line is within the if function
     if guess == 10:
         print("correct")
     else:
