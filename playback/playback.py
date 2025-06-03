@@ -1,2 +1,5 @@
 speak = input("Say something: ")
-print(speak,sep="...")
+words = speak.split()
+speed = "...".join(words)
+print(speed)
+
