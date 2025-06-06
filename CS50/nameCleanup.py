@@ -2,7 +2,7 @@ SHOWS = [
     " Avatar: what is that?",
     "pokemon",
     "   ben 10   ",
-    "Stranger things",
+    "Stranger thingscd",
 ]
 
 def main():
