@@ -4,4 +4,4 @@ if greeting == "hello":
 elif greeting == "h":
     print("$20")
 else:
-    print($100)
+    print("$100")
