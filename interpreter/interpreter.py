@@ -1,7 +1,4 @@
-x = int(input("x variable: "))
-y = int(input("y variable: "))
+x, y, z = input("Expression: ")
 
-if x + y:
-    print(z)
-elif x - y:
-    print(z)
+x = int(x)
+z = float(z)
