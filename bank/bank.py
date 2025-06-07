@@ -5,3 +5,4 @@ elif greeting == "h":
     print("$20")
 else:
     print("$100")
+
