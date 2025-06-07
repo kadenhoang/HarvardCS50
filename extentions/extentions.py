@@ -7,4 +7,6 @@ elif ".png" in filename:
 elif ".jpeg" in filename:
     print("image/jpeg)
 elif ".png" in filename:
-
+    print("image/png)
+elif ".pdf" in filename:
+    print("application/)
