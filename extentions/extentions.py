@@ -1,4 +1,10 @@
 filename = input("File Name: ")
 
-if filename.endswith(".gif" or ".jpg" or ".jpeg" or ".png"):
-    print("Image/)
+if ".gif" in filename:
+    print("image/gif")
+elif ".png" in filename:
+    print("image/png)
+elif ".jpeg" in filename:
+    print("image/jpeg)
+elif ".png" in filename:
+
