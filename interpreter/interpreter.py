@@ -1,7 +1,8 @@
-x, y, z = input("Expression: ").split()
+x, y, z = input("Expression: ").strip().split()
 
 x = int(x)
-z = float(z)
-
+z = int(z)
+g = 
 match y:
-    case 
+    case "+":
+        print(x+z)
