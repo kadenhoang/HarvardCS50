@@ -10,7 +10,8 @@ def get_num():
             break
     return n
 
-# create a fuction meow with paremeter(n)(just a name)
+# create a fuction meow with paremeter(n)
+# (n) is the name that I need to calculate
 def meow(n):
     for _ in range(n):
         print("Meow")
