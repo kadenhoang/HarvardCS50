@@ -1,4 +1,4 @@
-def main()
+def main():
     numbers = get_num()
     meow(numbers)
 
@@ -12,3 +12,5 @@ def get_num():
 def meow(n):
     for _ in range(n)
         print("Meow")
+
+main()
