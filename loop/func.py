@@ -11,7 +11,7 @@ def get_num():
     return n
 
 # create a fuction meow with paremeter(n)
-# (n) is the name that I need to calculate
+# (n) is the name that I need for the function to calculate
 def meow(n):
     for _ in range(n):
         print("Meow")
