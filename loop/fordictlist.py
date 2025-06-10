@@ -4,10 +4,10 @@
 
 
 students = [
-    {"Vu":"Vietnam", "Sign":"Leo"},
-     {"Hero":"Tanzania","Sign":"Scorpion"},
-     {"Peter":"America","Sign": None}
+    {"Name":"Vu", "Country":"Vietnam", "Sign":"Leo"},
+     {"Name":"Hero", "Country":"Tanzania", "Sign":"Scorpion"},
+     {"Name":"Peter", "Country":"America", "Sign": None}
 ]
 
-for student in range(len(students)):
-    print(student, students[student])
+for student in students:
+    print(student["Name"], student["Country"], student["Sign"],sep=", ")
