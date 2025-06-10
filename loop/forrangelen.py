@@ -5,4 +5,4 @@ students = ["Vu", "Cami","Someone"]
 #use len(length) to count the length of the list
 
 for i in range(len(students)):
-    print(students[i])
+    print(i + 1, students[i])
