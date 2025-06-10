@@ -4,7 +4,10 @@
 
 studentsdict = {"Vu":"Vietnam", "Hashita":"India", "Hero":"Tanzania", "Jordan":"Malay",}
 
+
 for student in studentsdict:
-    #using student only print the keyword, for content after ":" whe need [indice "student"]
-    #print(student, studentsdict[student],sep=", ")
-    print(student["Vu"])
+    #in dict, indice:"student" only print the keyword,
+    # for content after ":" whe need [indice "student"], means go in to the dict and find the def of the keywords
+
+    print(student, studentsdict[student],sep=", ")
+
