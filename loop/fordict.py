@@ -2,4 +2,4 @@ students = {"Vu":"Vietnam", "Hashita":"India", "Hero":"Tanzania", "Jordan":"Mala
 
 
 for student in students:
-    print(students[students])
+    print(student[students])
