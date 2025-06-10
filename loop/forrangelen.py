@@ -1,4 +1,8 @@
-students = ["Vu", "Cami", "Someone"]
+# create a list []
+students = ["Vu", "Cami","Someone"]
 
-for student in range(len(students)):
-    print(students)
+# range() only expect integer so
+#use len(length) to count the length of the list
+
+for i in range(len(students)):
+    print(students[i])
