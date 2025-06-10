@@ -6,4 +6,5 @@ studentsdict = {"Vu":"Vietnam", "Hashita":"India", "Hero":"Tanzania", "Jordan":"
 
 for student in studentsdict:
     #using student only print the keyword, for content after ":" whe need [indice "student"]
-    print(student, studentsdict[student],sep=", ")
+    #print(student, studentsdict[student],sep=", ")
+    print(student["Vu"])
