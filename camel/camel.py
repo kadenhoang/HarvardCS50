@@ -3,7 +3,7 @@ def main():
     print(snake_case(camel_case))
 
 def snake_case(case):
-    case = camel_case.lower().separate("_")
+    case = case.lower().replace("", "_")
     return case
 
 main()
