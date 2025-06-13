@@ -2,9 +2,10 @@
 # ask user for input, assign it to camelcase
 camelcase = input("camelCase: ")
 #print snakecase without newline (end="")
-print("snake_case: ", sep="")
+print("snake_case: ", end="")
 
 for letter in camelcase:
+    # if the letter is uppercase [isupper()] then:
     if letter.isupper():
         print("_" + letter.lower(), end="")
     else:
