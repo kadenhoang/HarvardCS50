@@ -9,11 +9,11 @@ def main():
     print(report(student))
 
 def report(student):
-return f"""
+    return f"""
 name: {student["name"]}
 school: {student.get("school", "Unknown")}
 age: {student["age"]}
-nationality:{student.get("nationality", "Unknown")}
+nationality: {student.get("nationality", "Unknown")}
 """
 
 main()
