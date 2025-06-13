@@ -9,6 +9,5 @@ for letter in camelcase:
         print("_" + letter.lower(), end="")
     else:
         print(letter, end="")
-
 print()  # Print a newline at the end
 
