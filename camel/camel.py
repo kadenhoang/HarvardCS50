@@ -1,9 +1,6 @@
-def main():
-    camel_case = input("camelCase: ")
-    print(snake_case(camel_case))
+camelcase = input("camelCase: ")
+print (camelcase.end="")
 
-def snake_case(case):
-    case = case.lower().replace("", "_")
-    return case
-
-main()
+for letter in camelcase:
+    if letter.isupper():
+        
