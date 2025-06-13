@@ -10,3 +10,5 @@ for letter in camelcase:
     else:
         print(letter, end="")
 
+print()  # Print a newline at the end
+
