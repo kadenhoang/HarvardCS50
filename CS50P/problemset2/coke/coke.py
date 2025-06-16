@@ -10,6 +10,7 @@ while amount_due > 0:
     if coin in [25,10,5]:
         amount_due -= coin
 
+# change owed to the user
 change_owed = abs(amount_due)
 
 print("Change Owed:", change_owed)
