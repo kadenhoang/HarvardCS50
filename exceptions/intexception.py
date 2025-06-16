@@ -1,6 +1,6 @@
 def main():
     userinput = get_int("Enter an int: ")
-    print("The int is:", userinput)
+    print("The number is:", userinput)
 
 def get_int(prompt):
     #create a loop to ask for int if input is not int
