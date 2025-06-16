@@ -13,12 +13,15 @@ def get_int(prompt):
 
         # if the input is not an integer, make an exeption
         except ValueError:
+        #remind the user of wrong input
             print("That is not an integer")
+        #or
+        #pass (continue the loop wthout doing anything)
         # after checking, if int = true then return userinput
         else:
             return userinput
 
-
+main()
 
 
 
