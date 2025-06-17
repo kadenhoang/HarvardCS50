@@ -13,13 +13,13 @@ itemlist = {"Baja Taco": 4.25,
 while True:
     try:
     # ask user to make order
-        item = input("Item:")
+        order = input("Item:")
 
         if item == itemlist:
             print(item, itemlist[item])
         else:
-            print()
-    except EOFEerror:
+            pass
+    except EOFError:
         pass
 
 
