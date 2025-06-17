@@ -15,10 +15,12 @@ while True:
     # ask user to make order
         item = input("Item:")
 
-        for item in itemlist:
-            if item == itemlist:
-                print(item, itemlist[item])
-            else
+        if item == itemlist:
+            print(item, itemlist[item])
+        else:
+            print()
+    except EOFEerror:
+        pass
 
 
 #
