@@ -1,15 +1,14 @@
 def main():
-    fraction = input("Fraction:")
-    print(get_fraction(fraction))
+    print(get_fraction())
 
 
 # create a loop if user input is not a fraction
-def get_fraction(fraction):
+def get_fraction():
     while True:
         try:
             # ask user for the fraction
 
-            #fraction = input("Fraction:" )
+            fraction = input("Fraction:" )
 
             #declare the parts of the fraction
             numer, deno = fraction.split("/")
