@@ -1,6 +1,6 @@
 def main():
     #fraction = input("Fraction:" )
-    print(get_fraction())
+    print(get_fraction(),"%",sep="")
 
 
 
