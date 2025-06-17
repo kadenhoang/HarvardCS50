@@ -16,7 +16,7 @@ while True:
     # ask user to make order
         order = input("Item:").title()
 
-        if order == itemlist:
+        if order in itemlist:
             total += itemlist[order]
             print(f"total: ${total:2f}")
         else:
