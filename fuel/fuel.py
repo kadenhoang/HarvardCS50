@@ -17,7 +17,7 @@ def get_fraction(fraction):
             deno = int(deno)
 
             #print out the percentage
-            print(round(numer/deno)*100)
+            print(round((numer/deno)*100))
             break
 
         # if it is not a fraction then use exception
