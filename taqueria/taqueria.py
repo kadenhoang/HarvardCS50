@@ -9,16 +9,19 @@ itemlist = {"Baja Taco": 4.25,
     "Taco": 3.00,
     "Tortilla Salad": 8.00}
 
+total = 0.0
 #create a loop to continue the order until done
 while True:
     try:
     # ask user to make order
-        order = input("Item:")
+        order = input("Item:").title()
 
-        if item == itemlist:
-            print(item, itemlist[item])
+        if order == itemlist:
+            total += itemlist[order]
+            print(f{})
         else:
             pass
+
     except EOFError:
         pass
 
