@@ -18,12 +18,13 @@ while True:
 
         if order in itemlist:
             total += itemlist[order]
-            print(f"total: ${total:2f}")
+            print(f"Total: ${total:.2f}")
         else:
             pass
 
     except EOFError:
-        pass
+        print()
+        break
 
 
 #
