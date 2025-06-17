@@ -16,7 +16,7 @@ while True:
         item = input("Item:")
 
         for item in itemlist:
-            if item = itemlist:
+            if item == itemlist:
                 print(item, itemlist[item])
             else
 
