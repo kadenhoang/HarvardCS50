@@ -1,14 +1,17 @@
 def main():
-    print(get_fraction())
+    fraction = input("Fraction:" )
+    print(get_fraction(fraction))
+
+
 
 
 # create a loop if user input is not a fraction
-def get_fraction():
+def get_fraction(fraction):
     while True:
         try:
             # ask user for the fraction
 
-            fraction = input("Fraction:" )
+            #fraction = input("Fraction:" )
 
             #declare the parts of the fraction
             numer, deno = fraction.split("/")
@@ -17,9 +20,12 @@ def get_fraction():
 
             #return out the percentage
             return round((numer/deno)*100)
-            break
+
 
         # if it is not a fraction then use exception
         except (ValueError,ZeroDivisionError):
             pass
 
+        else:
+            break
+main()
