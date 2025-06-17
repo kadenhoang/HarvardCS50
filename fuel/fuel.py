@@ -4,7 +4,7 @@ def main():
 
 
 # create a loop if user input is not a fraction
-def get_fraction(fraction)
+def get_fraction(fraction):
     while True:
         try:
             # ask user for the fraction
