@@ -16,7 +16,7 @@ total = 0.0
 while True:
     try:
     # ask user to make order
-        order = input("Item:").title()
+        order = input("Item:").title().strip()
 
         if order in itemlist:
             total += itemlist[order]
