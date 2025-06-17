@@ -18,7 +18,7 @@ while True:
 
         if order == itemlist:
             total += itemlist[order]
-            print(f{})
+            print(f"total: ",total)
         else:
             pass
 
