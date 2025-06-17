@@ -22,7 +22,7 @@ while True:
             total += itemlist[order]
             print(f"Total: ${total:.2f}")
         else:
-            pass
+            print(">>")
 
     except EOFError:
         print()
