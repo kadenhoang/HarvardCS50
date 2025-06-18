@@ -28,10 +28,12 @@ while True:
         except:
             try:
                 old_m,old_d,y = date.split(" ")
+                old_m = int(old_m)
+                old_d = int(old_d)
                 for i in range(len(m)):
                     if old_m == m[i]
                         m = i + 1
-                day = old_d.replace(",","")
+                d = old_d.replace(",","")
 
             except:
                 pass
