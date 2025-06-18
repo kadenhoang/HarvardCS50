@@ -33,4 +33,6 @@ while True:
                         m = i + 1
                 day = old_day.replace(",","")
 
+            except:
+                pass
 
