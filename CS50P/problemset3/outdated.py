@@ -18,3 +18,5 @@ while True:
     try:
         date = intput("Date:")
         m,d,y = date.split("/")
+        if d >= 1 and d <= 31:
+            
