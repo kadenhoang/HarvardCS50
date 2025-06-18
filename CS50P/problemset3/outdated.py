@@ -1,4 +1,4 @@
-dob = input("Date:")
+m,d,y = input("Date:").split(" ","/")
 
 months = [
      "January",
