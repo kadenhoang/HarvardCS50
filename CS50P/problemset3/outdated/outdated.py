@@ -42,7 +42,6 @@ while True:
             if 1 <= day <= 31:
                 break
         except:
-            if not month in monthslist:
                 pass
 
 print(f"{year}-{month:02}-{day:02}")
