@@ -17,26 +17,25 @@ m = [
 while True:
     date = input("Date:")
     try:
-
-        m,d,y = date.split("/")
-        m = int(m)
-        d = int(d)
-        y = int(y)
-        if (d >= 1 and d <= 31) and (m >= 1 and m <= 12):
+        month_num, day, year = date.split("/")
+        month_num = int(month_num)
+        day = int(day)
+        year = int(year)
+        if 1 <= day <= 31 and 1 <= month_num <= 12:
             break
-
     except:
         try:
-            old_m,old_d,y = date.split(" ")
-            old_m = int(old_m)
-            old_d = int(old_d)
+            old_m, old_d, year = date.split(" ")
+            old_d = old_d.replace(",", "")
+            day = int(old_d)
+            year = int(year)
             for i in range(len(m)):
-                if old_m == m[i]
-                    m = i + 1
-            d = old_d.replace(",","")
-
+                if old_m == m[i]:
+                    month_num = i + 1
+                    break
+            if 1 <= day <= 31:
+                break
         except:
             pass
 
-print(f"{y}-{m:02}-{d:02}")
-
+print(f"{year}-{month_num:02}-{day:02}")
