@@ -15,7 +15,7 @@ monthslist = [
 
 
 while True:
-    date = input("Date:")
+    date = input("Date:").strip()
     try:
         month, day, year = date.split("/")
         month = int(month)
