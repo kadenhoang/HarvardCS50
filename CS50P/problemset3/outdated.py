@@ -17,11 +17,11 @@ m = [
 while True:
     date = input("Date:")
     try:
-        month_num, day, year = date.split("/")
-        month_num = int(month_num)
+        month, day, year = date.split("/")
+        month = int(month)
         day = int(day)
         year = int(year)
-        if 1 <= day <= 31 and 1 <= month_num <= 12:
+        if 1 <= day <= 31 and 1 <= month <= 12:
             break
     except:
         try:
