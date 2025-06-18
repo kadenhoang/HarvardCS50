@@ -1,4 +1,4 @@
-m = [
+monthslist = [
      "January",
     "February",
     "March",
@@ -29,8 +29,8 @@ while True:
             old_d = old_d.replace(",", "")
             day = int(old_d)
             year = int(year)
-            for i in range(len(m)):
-                if old_m == m[i]:
+            for i in range(len(monthslist)):
+                if old_m == monthslist[i]:
                     month_num = i + 1
                     break
             if 1 <= day <= 31:
@@ -38,4 +38,4 @@ while True:
         except:
             pass
 
-print(f"{year}-{month_num:02}-{day:02}")
+print(f"{year}-{month:02}-{day:02}")
