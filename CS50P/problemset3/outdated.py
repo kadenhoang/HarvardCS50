@@ -31,7 +31,7 @@ while True:
             year = int(year)
             for i in range(len(monthslist)):
                 if old_m == monthslist[i]:
-                    month_num = i + 1
+                    month = i + 1
                     break
             if 1 <= day <= 31:
                 break
