@@ -28,5 +28,9 @@ while True:
         except:
             try:
                 old_m,old_d,y = date.split(" ")
+                for i in range(len(m)):
+                    if old_m == m[i]
+                        m = i + 1
+                day = old_day.replace(",","")
 
 
