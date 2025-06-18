@@ -24,3 +24,7 @@ while True:
         if (d >= 1 and d <= 31) and (m >= 1 and m <= 12):
             break
 
+    except:
+        try:
+            
+
