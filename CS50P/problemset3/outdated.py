@@ -15,7 +15,7 @@ months = [
 
 
 while True:
-    date = intput("Date:")
+    date = input("Date:")
         try:
 
             m,d,y = date.split("/")
@@ -31,7 +31,7 @@ while True:
                 for i in range(len(m)):
                     if old_m == m[i]
                         m = i + 1
-                day = old_day.replace(",","")
+                day = old_d.replace(",","")
 
             except:
                 pass
