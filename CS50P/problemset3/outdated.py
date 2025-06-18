@@ -14,3 +14,7 @@ months = [
     "November",
     "December"
     ]
+
+while True:
+    try:
+        date
