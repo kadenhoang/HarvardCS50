@@ -36,5 +36,5 @@ while True:
             except:
                 pass
 
-
+print(f"{y}-{m:02}-{d:02}")
 
