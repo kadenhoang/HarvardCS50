@@ -27,6 +27,6 @@ while True:
 
         except:
             try:
-                old_m,old_d,old_y = date.split(" ")
-                
+                old_m,old_d,y = date.split(" ")
+
 
