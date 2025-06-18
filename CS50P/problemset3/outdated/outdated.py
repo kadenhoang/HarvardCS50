@@ -16,7 +16,7 @@ monthslist = [
 
 while True:
     #ask the user for input
-    date = input("Date:").strip()
+    date = input("Date:").strip().title()
     try:
         #split the date input in to 3 part
         month, day, year = date.split("/")
