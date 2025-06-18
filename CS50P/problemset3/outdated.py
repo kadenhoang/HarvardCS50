@@ -1,5 +1,3 @@
-m,d,y = input("Date:").split(" ","/")
-
 months = [
      "January",
     "February",
@@ -15,6 +13,8 @@ months = [
     "December"
     ]
 
+
 while True:
     try:
-        date
+        date = intput("Date:")
+        m,d,y = date.split("/")
