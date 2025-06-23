@@ -1,16 +1,25 @@
-from pyfiglet import figlet
-import random
+from pyfiglet import Figlet
+from random import choice
+from sys import argv
 
+fidlet = Figlet()
+
+# two command-line arguments zero or two
+if len(argv) == 1:
+    randomfont = True
+elif len(argv) == 3 and (argv[1] != "-f" or argv[1] != "--font"):
+    randomfont = False
+else:
+    sys.exit(1)
 # ask user for input
 text = input("Input:").strip().lower()
 
-# two command-line arguments zero or two
+# get a list ot fonts
+figlet.getFonts()
 
-# zero = random font
-if len(argv) == 0:
-    print("Output:",random(text))
+if randomfont = True:
+    font = 
 
-# 2 = specific font
 
 #outputs the text in the desired font
 
