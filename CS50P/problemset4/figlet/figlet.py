@@ -18,7 +18,7 @@ text = input("Input:").strip().lower()
 figlet.getFonts()
 
 if randomfont = True:
-    font = 
+    font = choice(figlet.getFonts())
 
 
 #outputs the text in the desired font
