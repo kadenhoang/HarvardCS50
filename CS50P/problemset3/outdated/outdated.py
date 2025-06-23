@@ -28,19 +28,19 @@ while True:
             break
     except:
         try:
-            # split the original input again with " "
-            old_m, old_d, year = date.split(" ")
+            # split the original input again with " " if user type name of month
+            monthname, old_d, year = date.split(" ")
             old_d = old_d.replace(",", "")
             day = int(old_d)
             year = int(year)
 
             # if the month match with the indice of the list
-            for i in range(len(monthslist)):
-                if old_m == monthslist[i]:
-                    month = i + 1
+            if monthname in monthslist:
+                month = monthslist.index(monthname) + 1
+                if 1 <= day <= 31:
                     break
-            if 1 <= day <= 31:
-                break
+            else:
+                continue
         except:
                 pass
 
