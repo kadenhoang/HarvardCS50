@@ -29,7 +29,8 @@ int main (void)
             }
         else
             {
-                printf("Not Found\n");
+                printf("Not Found\n
+                    ");
                 return 1;
             }
     }
