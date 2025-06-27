@@ -70,11 +70,15 @@ bool vote(string name)
     {
         // check if candidate's name matches the input "name"
         // If yes, increase the candidate's vote
-        if candidates[i].name == name:
+        if candidates[i].name == name
+        {
             candidates[i].votes += 1;
             return true;
-        else:
+        }
+        else
+        {
             continue
+        }
     return false;
     }
 }
