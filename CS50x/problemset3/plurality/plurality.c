@@ -66,7 +66,7 @@ int main(int argc, string argv[])
 bool vote(string name)
 {
     // Iterate over each candidate
-    for (int i = 0; i < candidate_count, i++)
+    for (int i = 0; i < candidate_count; i++)
     {
         // check if candidate's name matches the input "name"
         // If yes, increase the candidate's vote
