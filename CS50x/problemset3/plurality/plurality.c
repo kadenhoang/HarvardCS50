@@ -70,7 +70,7 @@ bool vote(string name)
     {
         // check if candidate's name matches the input "name"
         // If yes, increase the candidate's vote
-        if candidates[i].name == name
+        if (strcmp(candidates[i].name, name) == 0)
         {
             candidates[i].votes += 1;
             return true;
