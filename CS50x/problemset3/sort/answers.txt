@@ -1,47 +1,55 @@
+I use random,reversed,sorted 5000 and check for 'real' running time
+I tried to determine the upper bound and the lower bound of each method
+
+sort1 uses: Selection sort
+
+How do you know?:
+This method is the least efficent in terms of sorting,
+Sorting time is the longest out of the three methods
+
+sort2 uses: Merge sort
+
+How do you know?:
+Merge sort is known for the fastest sorting method.
+Sorting time is the fastest
+
+
+sort3 uses: Mubble sort
+
+How do you know?:
+This method is faster than selection sort but slower than merge sort
+Sorting time shows the same.
+
+
 sort 1:
 random 5000:
-real 0m0.054s - 84s
-user 0m0.032s
-sys 0m0.021s
+real 0m0.054s - 0m0.084s
 
 reversed5000:
-real 62 - 0m0.0104s
-user 0m0.039s
-sys 0m0.024s
+real 0m0.062 - 0m0.0104s
 
 sorted5000:
-real 0m0.020s - 51
-user 0m0.002s
-sys 0m0.019s
+real 0m0.020s - 0m0.051
 
 sort2:
 random
-real 0m0.021 - 50s
-user 0m0.002s
-sys 0m0.018s
+real 0m0.021 - 0m0.050s
 
 reverse
-real 0m0.021s - 34s
-user 0m0.005s
-sys 0m0.014s
+real 0m0.021s - 0m0.034s
 
 sorted
-real 0m0.021s - 32s
-user 0m0.004s
-sys 0m0.017s
+real 0m0.021s - 0m0.032s
+
 
 sort3:
 random
-real 0m0.039s -89
-user 0m0.019s
-sys 0m0.020s
+real 0m0.039s - 0m0.089s
 
 reversed
-real 41 - 0m0.057s
-user 0m0.032s
-sys 0m0.018s
+real 0m0.041s - 0m0.057s
 
 sorted
-real 0m0.038s - 53
-user 0m0.022s
-sys 0m0.018s
+real 0m0.038s - 0m053s
+
+*These numbers are not exact, just the average of many run tests

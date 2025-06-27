@@ -1,0 +1,47 @@
+sort 1:
+random 5000:
+real 0m0.054s - 84s
+user 0m0.032s
+sys 0m0.021s
+
+reversed5000:
+real 62 - 0m0.0104s
+user 0m0.039s
+sys 0m0.024s
+
+sorted5000:
+real 0m0.020s - 51
+user 0m0.002s
+sys 0m0.019s
+
+sort2:
+random
+real 0m0.021 - 50s
+user 0m0.002s
+sys 0m0.018s
+
+reverse
+real 0m0.021s - 34s
+user 0m0.005s
+sys 0m0.014s
+
+sorted
+real 0m0.021s - 32s
+user 0m0.004s
+sys 0m0.017s
+
+sort3:
+random
+real 0m0.039s -89
+user 0m0.019s
+sys 0m0.020s
+
+reversed
+real 41 - 0m0.057s
+user 0m0.032s
+sys 0m0.018s
+
+sorted
+real 0m0.038s - 53
+user 0m0.022s
+sys 0m0.018s
