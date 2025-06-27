@@ -69,7 +69,9 @@ bool vote(string name)
     for (int i = 0; i < candidate_count, i++)
     {
         // check if candidate's name matches the input "name"
+        // If yes, increase the candidate's vote
         if candidates[i].name == name:
+            candidates[i].votes += 1;
             return true;
         else:
             continue
@@ -81,7 +83,7 @@ bool vote(string name)
 void print_winner(void)
 {
     //the maximum number of voters
-    
+
 
     //print the candidate with maximum votes
     return;
