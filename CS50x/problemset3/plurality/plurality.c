@@ -65,8 +65,16 @@ int main(int argc, string argv[])
 // Update vote totals given a new vote
 bool vote(string name)
 {
-    // TODO
+    // Iterate over each candidate
+    for (int i = 0; i < candidate_count, i++)
+    {
+        // check if candidate's name matches the input "name"
+        if candidates[i].name == name:
+            return true;
+        else:
+            continue
     return false;
+    }
 }
 
 // Print the winner (or winners) of the election
