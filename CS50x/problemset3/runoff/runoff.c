@@ -130,6 +130,7 @@ bool vote(int voter, int rank, string name)
     {
         if (strcmp(candidates[i].name, name) == 0)
         {
+            // the voter 1(row 0) first choice(column 0) is candidate(i)
             preferences[voter][rank] = i;
             return true;
         }
@@ -150,7 +151,7 @@ bool print_winner(void)
 {
     for (int i =  0; i < voter_count; i ++)
     {
-        
+
 
     }
     return false;
