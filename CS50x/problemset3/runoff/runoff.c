@@ -141,19 +141,21 @@ bool vote(int voter, int rank, string name)
 // Tabulate votes for non-eliminated candidates
 void tabulate(void)
 {
+    for (int i =  0; i < voter_count; i ++)
+    {
+        if (strcmp(candidates[i].name, name) == 0)
+        {
 
-    // TODO
+        }
+
+    }
     return;
 }
 
 // Print the winner of the election, if there is one
 bool print_winner(void)
 {
-    for (int i =  0; i < voter_count; i ++)
-    {
 
-
-    }
     return false;
 }
 
