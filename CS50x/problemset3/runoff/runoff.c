@@ -163,7 +163,7 @@ bool print_winner(void)
     {
         if (candidates[i].votes > halfofvotes)
             {
-                printf("%s\n" candidates[i].name);
+                printf("%s\n", candidates[i].name);
                 return true;
             }
     }
@@ -212,7 +212,7 @@ bool is_tie(int min)
         }
     }
 
-        if(tie_count == remaining)
+        if(tie_count == remain_count)
         {
             return true;
         }
