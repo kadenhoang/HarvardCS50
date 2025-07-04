@@ -9,6 +9,7 @@ int main(void)
 //& = show address of smt
 
     printf("%p\n", n );
+    //print the address of n
     printf("%p\n", &n[0]);
     printf("%p\n", &n[1]);
     printf("%p\n", &n[2]);
