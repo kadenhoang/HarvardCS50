@@ -9,10 +9,12 @@ for arg in sys.argv:
         print("Not a Python file")
         sys.exit(1)
 
+linecount = 0
 try:
     with open(sys.argv[1]) as file:
-        lines = file.readlines()
-        print(len(lines))
+        for line in file:
+            linecount += 1
+        print(linecount)
 except FileNotFoundError:
     print("File does not found")
 
