@@ -36,7 +36,10 @@ int main(int argc, char *argv[])
     // TODO: Copy header from input file to output file
     FILE *output = fopen(argv[2],"w");
 
-    while fread(&input,sizeof())
+    while fread(&HEADER_SIZE,sizeof(HEADER_SIZE),input, != 0)
+    {
+        fwrite(&HEADER_SIZE,sizeof(HEADER_SIZE))
+    }
 
     // TODO: Read samples from input file and write updated data to output file
 
