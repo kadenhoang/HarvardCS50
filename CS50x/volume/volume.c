@@ -39,7 +39,6 @@ int main(int argc, char *argv[])
 
     header h;
     // TODO: Copy header from input file to output file
-    FILE *output = fopen(argv[2],"w");
 
     while fread(&h,sizeof(h),1,input, != 0)
     {
