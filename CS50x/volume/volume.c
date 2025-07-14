@@ -4,8 +4,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+
 // Number of bytes in .wav header
 const int HEADER_SIZE = 44;
+
+typedef uint8_t header[HEADER_SIZE]
 
 int main(int argc, char *argv[])
 {
@@ -33,13 +36,13 @@ int main(int argc, char *argv[])
 
     float factor = atof(argv[3]);
 
-
+    header h;
     // TODO: Copy header from input file to output file
     FILE *output = fopen(argv[2],"w");
 
-    while fread(&,sizeof(),input, != 0)
+    while fread(&h,sizeof(h),1,input, != 0)
     {
-        fwrite(&HEADER_SIZE,sizeof(HEADER_SIZE))
+        fwrite(&h,sizeof(h),1,output)
     }
 
     // TODO: Read samples from input file and write updated data to output file
