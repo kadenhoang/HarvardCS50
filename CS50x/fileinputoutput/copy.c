@@ -14,7 +14,7 @@ BYTE b; //b will be 1 byte
 // give the func the address of b to store data in,
 // regonize the size of b(1 byte)
 // read 1 byte at a time from a source file.
-while fread(&b,sizeof(b),1,src != 0)
+while (fread(&b,sizeof(b),1,src) != 0)
 {
     fwrite(&b,sizeof(b),1,dst);
 }
