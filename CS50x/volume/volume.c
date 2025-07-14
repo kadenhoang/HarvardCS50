@@ -9,7 +9,7 @@
 const int HEADER_SIZE = 44;
 
 typedef uint8_t header[HEADER_SIZE];
-typedef uint16_t buffer;
+typedef int16_t buffer;
 
 int main(int argc, char *argv[])
 {
@@ -40,16 +40,16 @@ int main(int argc, char *argv[])
     header h;
     // TODO: Copy header from input file to output file
 
-    while (fread(&h,sizeof(h),1,input) != 0)
-    {
-        fwrite(&h,sizeof(h),1,output);
-    }
+    fread(&h,sizeof(h),1,input)
+
+    fwrite(&h,sizeof(h),1,output);
+
 
     // TODO: Read samples from input file and write updated data to output file
-    buffer sample
+    buffer sample;
     while (fread(&sample,sizeof(int16_t),1,input) != 0)
     {
-        buffer *= factor;
+        sample *= factor;
 
         fwrite(&sample, sizeof(int16_t),1,output);
     }
