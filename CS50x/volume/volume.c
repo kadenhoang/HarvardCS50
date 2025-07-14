@@ -40,14 +40,14 @@ int main(int argc, char *argv[])
     header h;
     // TODO: Copy header from input file to output file
 
-    while fread(&h,sizeof(h),1,input != 0)
+    while (fread(&h,sizeof(h),1,input) != 0)
     {
-        fwrite(&h,sizeof(h),1,output)
+        fwrite(&h,sizeof(h),1,output);
     }
 
     // TODO: Read samples from input file and write updated data to output file
     buffer sample
-    while fread(&sample,sizeof(int16_t),1,input != 0)
+    while (fread(&sample,sizeof(int16_t),1,input) != 0)
     {
         buffer *= factor;
 
