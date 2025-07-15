@@ -40,7 +40,7 @@ int main(int argc, char *argv[])
     header h;
     // TODO: Copy header from input file to output file
 
-    fread(&h,sizeof(h),1,input)
+    fread(&h,sizeof(h),1,input);
 
     fwrite(&h,sizeof(h),1,output);
 
