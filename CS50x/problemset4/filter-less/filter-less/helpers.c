@@ -28,9 +28,9 @@ void sepia(int height, int width, RGBTRIPLE image[height][width])
     {
         for (int j = 0; j < width; j++)
         {
-            int originalRed =  image[i][j]rgbtRed;
-            int originalGreen = image[i][j]rgbtGreen;
-            int originalBlue =  image[i][j]rgbtBlue
+            int originalRed =  image[i][j].rgbtRed;
+            int originalGreen = image[i][j].rgbtGreen;
+            int originalBlue =  image[i][j].rgbtBlue
             // Compute sepia values
 
             int sepiaRed = round(0.393 * originalRed + 0.769 * originalGreen + 0.189 * originalBlue);
@@ -38,17 +38,17 @@ void sepia(int height, int width, RGBTRIPLE image[height][width])
             int sepiaBlue = round(0.272 * originalRed + 0.534 * originalGreen + 0.131 * originalBlue);
 
             //limit values to 225
-            if (sepiaRed > 225)
+            if (sepiaRed > 255)
             {
-                sepiaRed = 225;
+                sepiaRed = 255;
             }
-            if (sepiaGreen > 225)
+            if (sepiaGreen > 255)
             {
-                sepiaGreen = 225;
+                sepiaGreen = 255;
             }
-            if (sepiaBlue > 225)
+            if (sepiaBlue > 255)
             {
-                sepiaBlue = 225;
+                sepiaBlue = 255;
             }
 
             // Update pixel with sepia values
