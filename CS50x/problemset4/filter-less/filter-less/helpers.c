@@ -42,7 +42,7 @@ void sepia(int height, int width, RGBTRIPLE image[height][width])
 
             if (image[i][j]rgbtRed,image[i][j]rgbtGreen,image[i][j]rgbtBlue) > 225
             {
-                
+                image[i][j]rgbtRed,image[i][j]rgbtGreen,image[i][j]rgbtBlue = 225;
             }
         }
 
