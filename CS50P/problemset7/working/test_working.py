@@ -6,7 +6,7 @@ def test_simple_time():
 def test_with_minutes():
     assert convert("9:30 AM to 5:15 PM") == "09:30 to 17:15"
 
-def test_midnight_to_noon():
+def test_midnight():
     assert convert("12 AM to 12 PM") == "00:00 to 12:00"
 
 def test_noon_to_midnight():

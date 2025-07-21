@@ -14,9 +14,9 @@ def convert(s):
     h1, m1, p1, h2, m2, p2 = match.groups()
 
     h1 = int(h1)
-    m1 = int(m1) if m1 else 0
+    m1 = int(m1[1:]) if m1 else 0
     h2 = int(h2)
-    m2 = int(m2) if m2 else 0
+    m2 = int(m2[1:]) if m2 else 0
 
     #condition the period
     if p1 == "AM":
