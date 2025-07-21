@@ -6,7 +6,7 @@ def main():
 
 
 def convert(s):
-    #search for h,m,p to match and set it ino groups
+    #search for h,m,p to match and set it into groups
     match = re.search(r"^(\d{1,2})(\:\d{2})?\s(AM|PM) to (\d{1,2})(\:\d{2})?\s(AM|PM)$", s)
     if not match:
         raise ValueError("Invalid format")
