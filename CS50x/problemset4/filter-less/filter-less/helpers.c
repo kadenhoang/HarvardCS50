@@ -82,8 +82,7 @@ void reflect(int height, int width, RGBTRIPLE image[height][width])
 // Blur image
 void blur(int height, int width, RGBTRIPLE image[height][width])
 {
-     // Create a copy of image
-    RGBTRIPLE copy[height][width];
+       RGBTRIPLE copy[height][width];
     for (int i = 0; i < height; i++)
     {
         for (int j = 0; j < width; j++)
@@ -91,7 +90,9 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
             copy[i][j] = image[i][j];
         }
     }
-     for (int i = 0; i < height; i++)
+
+    // Apply blur
+    for (int i = 0; i < height; i++)
     {
         for (int j = 0; j < width; j++)
         {
@@ -99,4 +100,30 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
             int greenSum = 0;
             int blueSum = 0;
             int count = 0;
+
+            // Loop over 3x3 grid around pixel (i, j)
+            for (int di = -1; di <= 1; di++)
+            {
+                for (int dj = -1; dj <= 1; dj++)
+                {
+                    int ni = i + di;
+                    int nj = j + dj;
+
+                    // Check bounds
+                    if (ni >= 0 && ni < height && nj >= 0 && nj < width)
+                    {
+                        redSum   += copy[ni][nj].rgbtRed;
+                        greenSum += copy[ni][nj].rgbtGreen;
+                        blueSum  += copy[ni][nj].rgbtBlue;
+                        count++;
+                    }
+                }
+            }
+
+            // Compute average
+            image[i][j].rgbtRed   = round((float) redSum / count);
+            image[i][j].rgbtGreen = round((float) greenSum / count);
+            image[i][j].rgbtBlue  = round((float) blueSum / count);
+        }
+    }
 }
