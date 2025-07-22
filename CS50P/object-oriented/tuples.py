@@ -7,6 +7,7 @@ def get_student():
     house = input("House:")
     # tuples use ()
     # the data inside cannot be changed (immuatable)
+    # use if I know the data should not be change
     return (name, house)
 
 if __name__ == "__main__":
