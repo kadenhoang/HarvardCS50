@@ -1,6 +1,6 @@
 def main():
     student = get_student()
-    print(f"{name} from {house})
+    print(f"{name} from {house}")
 
 def get_student():
     name = input("Name:")
@@ -10,4 +10,4 @@ def get_student():
     return (name, house)
 
 if __name__ == "__main__":
-    main
+    main()
