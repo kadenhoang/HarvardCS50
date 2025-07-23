@@ -10,7 +10,8 @@ int main(int argc, char *argv[])
         return 1
     }
 
-    uint8_t buffer[512];
+    uint8_t buffer[512] = data;
+
     FILE *card = fopen(argv[1], "r");
      //if the image cannot be open,inform
     if (card = NULL)
@@ -19,7 +20,7 @@ int main(int argc, char *argv[])
 
  return 1
     }
-    
+    while(fread(&data,sizeof(data),1,input) != 0)
  return 1
 
  //file name = 3 digit decimal number start with 000
