@@ -21,7 +21,7 @@ int main(int argc, char *argv[])
  return 1
     }
     while(fread(&data,sizeof(data),1,card) != 0)
- return 1
-
- //file name = 3 digit decimal number start with 000
+ 
+    // create JPEGS from the data
+ sprintf(filename, "%03i.jpg", 2);
 }
