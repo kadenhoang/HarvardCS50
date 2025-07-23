@@ -35,8 +35,8 @@ int main(int argc, char *argv[])
             {
                 fclose(img);
             }
-             sprintf(filename, "%03i.jpg", file_count++);
-             img = fopen(filename,"w");
+            sprintf(filename, "%03i.jpg", file_count++);
+            img = fopen(filename,"w");
         }
 
         if (img != NULL)
