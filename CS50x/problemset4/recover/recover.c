@@ -21,7 +21,10 @@ int main(int argc, char *argv[])
  return 1
     }
     while(fread(&data,sizeof(data),1,card) != 0)
- 
+    {
+        FILE *img = fopen()
+    }
+
     // create JPEGS from the data
  sprintf(filename, "%03i.jpg", 2);
 }
