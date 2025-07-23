@@ -23,6 +23,7 @@ int main(int argc, char *argv[])
     while(fread(&data,sizeof(data),1,card) != 0)
     {
         FILE *img = fopen(argv[1], "w")
+        fwrite(&img,sizeof(data),1,)
     }
 
     // create JPEGS from the data
