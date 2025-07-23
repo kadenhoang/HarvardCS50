@@ -10,8 +10,9 @@ int main(int argc, char *argv[])
         return 1
     }
 
-    uint8_t buffer[512] = data;
-
+    uint8_t buffer[512];
+    FILE *img = NULL;
+    char filename[]
     FILE *card = fopen(argv[1], "r");
      //if the image cannot be open,inform
     if (card = NULL)
@@ -19,7 +20,7 @@ int main(int argc, char *argv[])
         printf("Could not open file.\n")
         return 1
     }
-    while(fread(&data,sizeof(data),1,card) != 0)
+    while(fread(&buffer,1,512,card) == 512)
     {
         FILE *img = fopen(argv[1], "w")
         fwrite(&img,sizeof(data),1,)
