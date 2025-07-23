@@ -1,26 +1,27 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdint.h>
 
 int main(int argc, char *argv[])
 {
  //accept only 1 command-line, else remind
-    if (argv [1] != 2)
+    if (argc != 2)
     {
-        prinf("Usage: ./recover FILE\n");
-        return 1
+        printf("Usage: ./recover FILE\n");
+        return 1;
     }
 
     uint8_t buffer[512];
     FILE *img = NULL;
-    char filename[8]
+    char filename[8];
     int file_count = 0;
 
     FILE *card = fopen(argv[1], "r");
      //if the image cannot be open,inform
-    if (card = NULL)
+    if (card == NULL)
     {
         printf("Could not open file.\n")
-        return 1
+        return 1;
     }
     while(fread(buffer,1,512,card) == 512)
     {
