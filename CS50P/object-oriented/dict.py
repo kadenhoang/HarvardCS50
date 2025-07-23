@@ -1,6 +1,6 @@
-def main()
+def main():
     student = get_student()
-    print(f"{student['name']} from {student['house']})
+    print(f"{student['name']} from {student['house']}")
 
 #dict is mutatble so I can change the variable if needed
 def get_student():
