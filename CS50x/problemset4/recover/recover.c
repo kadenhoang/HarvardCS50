@@ -4,7 +4,7 @@
 int main(int argc, char *argv[])
 {
  //accept only 1 command-line, else remind
-    if (argv 1= 2)
+    if (argv [1] != 2)
     {
         prinf("Usage: ./recover FILE\n");
         return 1
@@ -17,8 +17,7 @@ int main(int argc, char *argv[])
     if (card = NULL)
     {
         printf("Could not open file.\n")
-
- return 1
+        return 1
     }
     while(fread(&data,sizeof(data),1,card) != 0)
     {
