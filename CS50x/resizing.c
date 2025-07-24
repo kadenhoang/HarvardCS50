@@ -1,1 +1,6 @@
 #include <
+
+int main(void)
+{
+    
+}
