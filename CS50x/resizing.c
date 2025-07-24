@@ -14,14 +14,15 @@ int main(void)
     list[1] = 2;
     list[2] = 3;
 
-
+    //realloc helps create new storing location without
+    //moving things around (create a for loop and assign list to tmp)
     int *tmp = realloc(4 * sizeof(int))
     if (tmp == NULL)
     {
         free(list);
         return 1;
     }
-    
+
     tmp[3] = 4
 
     //free up the previous data to prevent overflow or leak
