@@ -8,7 +8,7 @@ class Student:
 
     @classmethod #use to call the  method wt creating an object
     def get(cls):
-        # 'cls' refer to the class,
+        # 'cls' reference to the class,
         # input now can be used within the class
         name = input("Name:")
         house = input("House:")
