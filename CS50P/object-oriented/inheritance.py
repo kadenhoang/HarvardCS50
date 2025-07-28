@@ -7,14 +7,15 @@ class Wizard():
 #put Wizard in the parameter means let Student inherence the Wizard
 class Student(Wizard):
     def __init__ (self,name,house):
-        if not name:
-            raise ValueError
-        self.name = name
+        super().__init__(name)
         self.house = house
 
+# super() let me access the initialized value "name" in the mother class "Wizard"
 class Professor(Wizard):
     def __init__ (self,name,subject):
-        if not name:
-            raise ValueError
-        self.name = name
+        super().__init__(name)
         self.subject = subject
+
+
+def main():
+    student = Student()
