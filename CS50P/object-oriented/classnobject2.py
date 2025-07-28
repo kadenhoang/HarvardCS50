@@ -6,7 +6,7 @@ class Student:
     def __str__(self):
         print(f"{self.name} is in {self.house}")
 
-    @classmethod #use to call the method wt creating an object
+    @classmethod #use to call the  method wt creating an object
     def get(cls):
         # 'cls' refer to the class,
         # input now can be used within the class
