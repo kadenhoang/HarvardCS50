@@ -15,12 +15,8 @@ class Student:
         return cls(name,house)
 
 def main():
-    student = Student()
+    student = Student.get()
     print(student)
 
-def __main__ == __
-
-
-
-
-
+if __name__ == "__main__":
+    main()
