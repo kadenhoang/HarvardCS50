@@ -17,7 +17,7 @@ def main():
     diff = date_of_today - date_of_birth
     total_minutes = diff.days * 24 * 60
     word_minutes = p.number_to_words(total_minutes)
-    print(word_minutes)
+    print(word_minutes.capitalize())
 
 
 def check_birthday(birthdate):
