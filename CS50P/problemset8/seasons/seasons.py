@@ -24,8 +24,7 @@ def check_birthday(birthdate):
         if re.match(r"^\d{4}-\d{2}-\d{2}$", birthdate):
             year, month, day = birthdate.split("-")
             return year, month, day
-        else:
-             sys.exit()
+
 
 
 
