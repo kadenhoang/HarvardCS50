@@ -23,7 +23,7 @@ class Jar:
 
     @property
     def size(self):
-        return 
+        return self._n
         ...
 
 def main():
