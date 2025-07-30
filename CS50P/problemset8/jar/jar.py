@@ -35,10 +35,11 @@ class Jar:
 def main():
     jar = Jar()
     action = input("deposit or withdraw?:").strip().lower()
-    try:
-        amount = int(input("How many?:"))
-    except ValueError:
-        pass
+    while True:
+        try:
+            amount = int(input("How many?:"))
+        except ValueError:
+            print("Say What?")
 
     if action == "deposit":
         jar.deposit(amount)
