@@ -38,9 +38,9 @@ def main():
     jar = Jar()
     action = input("deposit or withdraw?:").strip().lower()
     if action == "deposit":
-        jar.deposit(input("how many?:"))
+        jar.deposit(int(input("how many?:")))
     elif action == "withdraw":
-        jar.withdraw(input("how many?:"))
+        jar.withdraw(int(input("how many?:")))
     else:
         raise ValueError("Say again?")
 
