@@ -35,4 +35,5 @@ class Jar:
         if not n:
             raise ValueError
 def main():
-    n = input(")
+    n = input("cookies")
+    return Jar(n)
