@@ -34,7 +34,7 @@ class Jar:
 
 def main():
     jar = Jar()
-    
+
     while True:
         action = input("deposit or withdraw?:").strip().lower()
         if action in ["deposit", "withdraw"]:
@@ -47,6 +47,7 @@ def main():
             break
         except ValueError:
             print("Say what?")
+        
 
     if action == "deposit":
         jar.deposit(amount)
