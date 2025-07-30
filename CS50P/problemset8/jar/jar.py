@@ -35,6 +35,8 @@ class Jar:
 def main():
     jar = Jar()
     action = input("deposit or withdraw?:").strip().lower()
+    if action not in ["deposit", "withdraw"]:
+        pass
 
     while True:
         try:
@@ -47,8 +49,7 @@ def main():
             jar.deposit(amount)
         elif action == "withdraw":
             jar.withdraw(amount)
-        else:
-            raise ValueError("Say again?")
+
     print(jar)
 
 if __name__ =="__main__":
