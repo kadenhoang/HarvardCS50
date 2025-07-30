@@ -49,4 +49,7 @@ def main():
         jar.withdraw(amount)
     else:
         raise ValueError("Say again?")
+    print(jar)
 
+if __name__ =="__main__":
+    main()
