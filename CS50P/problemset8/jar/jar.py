@@ -1,6 +1,7 @@
 class Jar:
-    def __init__(self, capacity=12):
+    def __init__(self, capacity=12, n=0):
         self.capacity = capacity
+        self.n = n
 
     def __str__(self):
         ...return (f"{self.n}")
@@ -9,8 +10,7 @@ class Jar:
         self.n = n
 
     def withdraw(self, n):
-        if not n:
-            raise ValueError
+
 
     @property
     def capacity(self):
@@ -30,6 +30,9 @@ class Jar:
         if len(n) is > 12:
             raise ValueError
 
-
+    @withdraw.setter
+    def withdraw(self,n):
+        if not n:
+            raise ValueError
 def main():
     n = input(")
