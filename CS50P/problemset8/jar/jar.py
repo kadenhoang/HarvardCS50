@@ -37,9 +37,9 @@ def main():
     while True:
         action = input("deposit or withdraw?:").strip().lower()
         if action not in ["deposit", "withdraw"]:
-            pass
+            print("Say Again?")
 
-
+    while True:
         try:
             amount = int(input("How many?:"))
             break
