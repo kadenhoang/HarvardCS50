@@ -36,5 +36,5 @@ class Jar:
 
 def main():
     jar = Jar()
-    jar.deposit(input("Add some cookies:"))
-    print(jar)
+    action = input("deposit or withdraw?:"
+                   d)
