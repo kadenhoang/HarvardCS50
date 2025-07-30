@@ -35,5 +35,6 @@ class Jar:
 
 
 def main():
-    n = input("cookies")
-    return Jar(n)
+    jar = Jar()
+    jar.deposit(input("Add some cookies:"))
+    print(jar)
