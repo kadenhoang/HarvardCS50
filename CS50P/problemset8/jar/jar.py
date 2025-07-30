@@ -1,5 +1,7 @@
 class Jar:
     def __init__(self, capacity=12, n=0):
+        if capacity < 0:
+            raise ValueError("Jar's size cannot be negative")
         self._capacity = capacity
         self._n = 0
 
@@ -27,11 +29,7 @@ class Jar:
     @property
     def size(self):
         return self._n
-        ...
-    @capacity.setter
-    def capacity(self,capacity):
-        if not capacity > 0:
-            raise ValueError("Empty")
+
 
 
 def main():
