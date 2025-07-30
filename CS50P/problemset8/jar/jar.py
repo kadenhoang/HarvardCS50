@@ -34,11 +34,12 @@ class Jar:
 
 def main():
     jar = Jar()
-    action = input("deposit or withdraw?:").strip().lower()
-    if action not in ["deposit", "withdraw"]:
-        pass
-
     while True:
+        action = input("deposit or withdraw?:").strip().lower()
+        if action not in ["deposit", "withdraw"]:
+            pass
+
+
         try:
             amount = int(input("How many?:"))
             break
