@@ -1,10 +1,9 @@
 class Jar:
-    def __init__(self, capacity=12,):
+    def __init__(self, capacity=12):
         self.capacity = capacity
-        self.n = n
 
     def __str__(self):
-        ...return (f"{n}")
+        ...return (f"{self.n}")
 
     def deposit(self, n):
         if len(n) is > 12:
