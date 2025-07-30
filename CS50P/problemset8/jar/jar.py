@@ -1,7 +1,5 @@
 class Jar:
-    def __init__(self, capacity=12,n):
-        if not capacity >= 0:
-            raise ValueError
+    def __init__(self, capacity=12,):
         self.capacity = capacity
         self.n = n
 
@@ -25,6 +23,11 @@ class Jar:
     def size(self):
         return self._n
         ...
+    @capacity.setter
+    def capacity(self,capacity):
+        if not capacity >= 0:
+            raise ValueError
+
 
 def main():
-    n = 
+    n = input(")
