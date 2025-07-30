@@ -43,12 +43,12 @@ def main():
         except ValueError:
             print("Say What?")
 
-    if action == "deposit":
-        jar.deposit(amount)
-    elif action == "withdraw":
-        jar.withdraw(amount)
-    else:
-        raise ValueError("Say again?")
+        if action == "deposit":
+            jar.deposit(amount)
+        elif action == "withdraw":
+            jar.withdraw(amount)
+        else:
+            raise ValueError("Say again?")
     print(jar)
 
 if __name__ =="__main__":
