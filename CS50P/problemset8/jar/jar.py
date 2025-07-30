@@ -6,8 +6,6 @@ class Jar:
         ...return (f"{self.n}")
 
     def deposit(self, n):
-        if len(n) is > 12:
-            raise ValueError
         self.n = n
 
     def withdraw(self, n):
@@ -25,6 +23,11 @@ class Jar:
     @capacity.setter
     def capacity(self,capacity):
         if not capacity >= 0:
+            raise ValueError
+
+    @deposit.setter
+    def deposit(self,n):
+        if len(n) is > 12:
             raise ValueError
 
 
