@@ -36,5 +36,10 @@ class Jar:
 
 def main():
     jar = Jar()
-    action = input("deposit or withdraw?:")
-    if action 
+    action = input("deposit or withdraw?:").
+    if action is "deposit":
+        jar.deposit(input("how many?:"))
+    elif action is "withdraw":
+        jar.withdraw(input("how many?:"))
+    else:
+        
