@@ -4,7 +4,7 @@ class Jar:
         self._n = 0
 
     def __str__(self):
-        ...return "🍪" * self._n
+        return "🍪" * self._n
 
     def deposit(self, n):
         if n < 0:
@@ -16,7 +16,7 @@ class Jar:
     def withdraw(self, n):
         if n < 0:
             raise ValueError("Are you gonna take some cookies?")
-        if n > self._n
+        if n > self._n:
             raise ValueError("You are Greedy, There is not enough")
         self._n -= n
 
@@ -36,10 +36,11 @@ class Jar:
 
 def main():
     jar = Jar()
-    action = input("deposit or withdraw?:").
-    if action is "deposit":
+    action = input("deposit or withdraw?:").strip().lower()
+    if action == "deposit":
         jar.deposit(input("how many?:"))
-    elif action is "withdraw":
+    elif action == "withdraw":
         jar.withdraw(input("how many?:"))
     else:
-        
+        raise ValueError("Say again?")
+
