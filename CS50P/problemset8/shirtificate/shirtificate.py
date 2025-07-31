@@ -1,14 +1,20 @@
 from fpdf import FPDF
 
 
+#make a white page with text on the middle top
 pdf = FPDF()
 pdf.add_page()
 pdf.set_font('Times', style='I', size = 16)
 pdf.cell(0, 10, text="CS50 Shirtificate", border=0, ln=1, align="C")
 
+#add the shirt and center it
 shirt_width = 150
 page_width = pdf.w
 x = (page_width - shirt_width)/ 2
 
 pdf.image("shirtificate.png",x=x, y = 50, w=shirt_width)
+
+#write white text on top of the shirt
+pdf.set_font('Times', style='I', size = 12)
+pdf.set
 
