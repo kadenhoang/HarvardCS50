@@ -15,7 +15,7 @@ y = 50
 pdf.image("shirtificate.png",x=x, y=y, w=shirt_width)
 
 #write white text on top of the shirt
-pdf.set_font('Times', style='I', size = 18)
+pdf.set_font('Times', style='I', size = 20)
 pdf.set_text_color(212,175,55)
 
 text_x = pdf.get_x()
