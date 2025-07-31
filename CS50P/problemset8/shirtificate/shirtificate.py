@@ -10,5 +10,5 @@ shirt_width = 150
 page_width = pdf.w
 x = (page_width - shirt_width)/ 2
 
-pdf.image("shirtificate.png",x=x, y = 20, w=shirt_width)
+pdf.image("shirtificate.png",x=x, y = 50, w=shirt_width)
 
