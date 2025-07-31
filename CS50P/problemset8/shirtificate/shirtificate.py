@@ -5,7 +5,7 @@ name = input("Name:")
 pdf = FPDF()
 pdf.add_page()
 pdf.set_font('Times', style='B', size = 40)
-pdf.cell(0, 20, "CS50 Shirtificate", border=0, ln=1, align="C")
+pdf.cell(0, 30, "CS50 Shirtificate", border=0, ln=1, align="C")
 
 #add the shirt and center it
 shirt_width = 150
