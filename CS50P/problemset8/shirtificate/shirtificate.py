@@ -5,7 +5,7 @@ from fpdf import FPDF
 pdf = FPDF()
 pdf.add_page()
 pdf.set_font('Times', style='I', size = 16)
-pdf.cell(0, 10, text="CS50 Shirtificate", border=0, ln=1, align="C")
+pdf.cell(0, 10, "CS50 Shirtificate", border=0, ln=1, align="C")
 
 #add the shirt and center it
 shirt_width = 150
@@ -16,5 +16,10 @@ pdf.image("shirtificate.png",x=x, y = 50, w=shirt_width)
 
 #write white text on top of the shirt
 pdf.set_font('Times', style='I', size = 12)
-pdf.set
+pdf.set_text_color(212,175,55)
 
+text_x = pdf.get_x()
+text_y = y + 10
+pdf.set_xy(x, text_y)
+
+pdf.cell(shirt_width, 10, "Anh Vu took CS50", align = "C")
