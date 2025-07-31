@@ -1,6 +1,6 @@
 from fpdf import FPDF
 
-
+name = input("Name:")
 #make a white page with text on the middle top
 pdf = FPDF()
 pdf.add_page()
@@ -11,8 +11,8 @@ pdf.cell(0, 10, "CS50 Shirtificate", border=0, ln=1, align="C")
 shirt_width = 150
 page_width = pdf.w
 x = (page_width - shirt_width)/ 2
-
-pdf.image("shirtificate.png",x=x, y = 50, w=shirt_width)
+y = 50
+pdf.image("shirtificate.png",x=x, y=y, w=shirt_width)
 
 #write white text on top of the shirt
 pdf.set_font('Times', style='I', size = 12)
@@ -22,4 +22,5 @@ text_x = pdf.get_x()
 text_y = y + 10
 pdf.set_xy(x, text_y)
 
-pdf.cell(shirt_width, 10, "Anh Vu took CS50", align = "C")
+pdf.cell(shirt_width, 10, f"{name} took CS50", align = "C")
+pdf.output("shirttificate_wt_text.pdf")
