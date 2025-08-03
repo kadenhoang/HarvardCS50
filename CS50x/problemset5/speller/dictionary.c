@@ -44,6 +44,8 @@ bool load(const char *dictionary)
         fwrite(&dst,sizeof(dst),1,dst);
     }
     fclose(src);
+
+    if 
 }
 
 // Returns number of words in dictionary if loaded, else 0 if not yet loaded
