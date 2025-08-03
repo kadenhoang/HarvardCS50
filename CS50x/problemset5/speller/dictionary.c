@@ -50,10 +50,10 @@ bool load(const char *dictionary)
         return false;
     }
     strcpy(n->word, src)
-
+    
     fclose(src);
 
-    if
+
 }
 
 // Returns number of words in dictionary if loaded, else 0 if not yet loaded
