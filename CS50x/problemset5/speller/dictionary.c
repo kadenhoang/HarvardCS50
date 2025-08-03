@@ -42,11 +42,15 @@ bool load(const char *dictionary)
     {
         return false;
     }
-    FILE *dst = fopen(table, "w")
-    while (fread(&src, sizeof(src),1) != 0)
+    fscanf(src, "%s", word);
+
+    node *n = malloc(sizeof(node));
+    if (n == NULL)
     {
-        fwrite(&dst,sizeof(dst),1,dst);
+        return false;
     }
+
+
     fclose(src);
 
     if
