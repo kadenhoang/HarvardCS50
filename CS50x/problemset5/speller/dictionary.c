@@ -38,6 +38,10 @@ bool load(const char *dictionary)
     // TODO
 
     FILE *src = fopen(dictionary, "r")
+    if (src == NULL)
+    {
+        return false;
+    }
     FILE *dst = fopen(table, "w")
     while (fread(&src, sizeof(src),1) != 0)
     {
@@ -45,7 +49,7 @@ bool load(const char *dictionary)
     }
     fclose(src);
 
-    if 
+    if
 }
 
 // Returns number of words in dictionary if loaded, else 0 if not yet loaded
