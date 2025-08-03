@@ -42,6 +42,8 @@ bool load(const char *dictionary)
     {
         return false;
     }
+
+    char word
     fscanf(src, "%s", word);
 
     node *n = malloc(sizeof(node));
@@ -49,7 +51,7 @@ bool load(const char *dictionary)
     {
         return false;
     }
-    strcpy(n->word, src)
+    strcpy(n->word, word)
 
     fclose(src);
 
