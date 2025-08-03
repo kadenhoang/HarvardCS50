@@ -37,7 +37,7 @@ bool load(const char *dictionary)
 {
     // TODO
 
-    FILE *src = fopen(dictionary, "r")
+    FILE *src = fopen(dictionary, "r");
     if (src == NULL)
     {
         return false;
@@ -50,7 +50,7 @@ bool load(const char *dictionary)
         return false;
     }
     strcpy(n->word, src)
-    
+
     fclose(src);
 
 
