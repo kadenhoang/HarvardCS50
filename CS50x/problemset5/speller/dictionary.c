@@ -59,6 +59,7 @@ bool load(const char *dictionary)
     n->next = NULL;
 
     int index = hash(word);
+    
     n->next = table[index];
     table[index] = n;
 }
