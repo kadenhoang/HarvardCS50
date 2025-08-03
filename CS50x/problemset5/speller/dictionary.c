@@ -36,8 +36,10 @@ unsigned int hash(const char *word)
 bool load(const char *dictionary)
 {
     // TODO
-    FILE *source = fopen(dictionnary, "r")
-    while source 
+
+    FILE *src = fopen(dictionary, "r")
+    FILE *dst = fopen(table, "w")
+    while (fread(&source, sizeof(source),1))
     return false;
 }
 
