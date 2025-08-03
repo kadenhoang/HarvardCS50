@@ -17,11 +17,12 @@ class Student:
     def house(self):
         return self._house
 
-    @property
+    @property #to use the function without ()
+    #make the data read-only and cannot be changed in the main function
     def name(self):
         return self._name
 
-    @house.setter #function setter/set the variable to smthing
+    @house.setter #function setter/ set how the attribute(variable belong to the class) can be change under our rule
     def house(self,house):
         if not house in ["Gryffindor","Ravenclaw","Slytherin","Hufflepuff"]:
             raise ValueError("Invalid House")
