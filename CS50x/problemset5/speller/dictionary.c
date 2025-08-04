@@ -28,6 +28,7 @@ bool check(const char *word)
 // Hashes word to a number
 unsigned int hash(const char *word)
 {
+    char *input =
     // TODO: Improve this hash function
     return toupper(word[0]) - 'A';
 }
@@ -59,7 +60,7 @@ bool load(const char *dictionary)
     n->next = NULL;
 
     int index = hash(word);
-    
+
     n->next = table[index];
     table[index] = n;
 }
