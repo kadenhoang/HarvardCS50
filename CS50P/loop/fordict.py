@@ -1,7 +1,7 @@
 # {} = dictionary , it allow us to associate one thing to another using ":"
 #  think of a dictionary, the first word is the keyword, the second is the definition
 # in this case, Vu is the keyword and Vietnam is what we want to know.
-
+#Include commit testing with VScode and Github
 studentsdict = {"Vu":"Vietnam", "Hashita":"India", "Hero":"Tanzania", "Jordan":"Malay",}
 
 
