@@ -1,34 +1,31 @@
 class Student:
     #a function in a class is called Method
 
-    #initialize a function and variables for the class
-    #after this function, other function in class will be able to use the variables assigned in it
-    def __init__(self,name,house):
-    #make a third variable "self" to store name,house
-        self._name = name
+    
+    def __init__(self,name,house): #constructor to initialize variables of the object
+        #self = this in Java, refer to the object\must declare as the first attribute in every function
+        #declare attributes within this function
+        self._name = name # "_" = protected\ "__" = private (use withtin the method and dont touch it)
         self._house = house
 
-    #self is refer to the object being created and store the varialbes
     def __str__(self):
-        return (f"{self.name} from {self.house}")
+        return (f"{self._name} from {self._house}")
 
-    #function and variable must have different name
-    @property #function getter / make the function as property
+    @property #function getter / use to get a encapsulated variable
     def house(self):
         return self._house
 
-    @property #to use the function without ()
-    #make the data read-only and cannot be changed in the main function
+    @property #function getter / use to get a encapsulated variable
     def name(self):
         return self._name
 
-    @house.setter #function setter/ set how the attribute(variable belong to the class) can be change under our rule
+    @house.setter #function setter/ update or change a encapsualted variable
     def house(self,house):
         if not house in ["Gryffindor","Ravenclaw","Slytherin","Hufflepuff"]:
             raise ValueError("Invalid House")
-        self._house = house #the "_" means private use withtin the method and dont touch it
+        self._house = house 
 
-    @name.setter
+    @name.setter #function setter/ update or change a encapsualted variable
     def name(self , name):
         if not name:
             raise ValueError("Invalid Name")
@@ -39,7 +36,8 @@ def get_student():
     house = input("House: ")
     #create an object from class Student
     #student = Student(name, house)
-    #or just return Student class and assigned it in the main
+
+    #or just return the object of Student class
     return Student(name,house)
 
 def main():
@@ -50,9 +48,6 @@ def main():
     #student now is a object, to call an object manually: use student.variable
     #or use __str__
     print(student)
-
-
-
 
 if __name__ == "__main__":
     main()
