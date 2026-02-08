@@ -5,8 +5,8 @@ class Student:
     #after this function, other function in class will be able to use the variables assigned in it
     def __init__(self,name,house):
     #make a third variable "self" to store name,house
-        self.name = name
-        self.house = house
+        self._name = name
+        self._house = house
 
     #self is refer to the object being created and store the varialbes
     def __str__(self):

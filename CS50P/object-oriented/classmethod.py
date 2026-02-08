@@ -1,10 +1,11 @@
 class Student:
-    def __init__(self,name,house):
-        self.name = name
-        self.house = house
+
+    def __init__(self,name,house): #constructor (self. = this. Java, must be explicitly declared)
+        self.__name = name # '_' = protected | '__' = private (can still be access using mangled name: _className_var)
+        self.__house = house
 
     def __str__(self):
-        print(f"{self.name} is in {self.house}")
+        return f"{self.__name} is in {self.__house}"
 
     @classmethod #use to call the  method wt creating an object
     def get(cls):
